@@ -3,7 +3,7 @@
     <artifactId>spring-cloud-demo</artifactId>
     <modules>
         <module>regcenter</module>
-        <module>client</module>
+        <module>hello-service</module>
         <module>config-server</module>
         <module>config-client</module>
         <module>ribbon-client</module>

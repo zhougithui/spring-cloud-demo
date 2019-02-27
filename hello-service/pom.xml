@@ -10,10 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zcloud.eureka.client</groupId>
-    <artifactId>client</artifactId>
+    <artifactId>hello-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>client</name>
+    <name>hello-service</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
