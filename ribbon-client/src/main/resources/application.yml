@@ -6,4 +6,4 @@ server:
   port: 8901
 spring:
   application:
-    name: ribbon
+    name: ribbon-client
