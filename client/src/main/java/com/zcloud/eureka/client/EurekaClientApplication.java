@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * eureka客户端
+ * 需要配置eureka的注册中心地址以及client应用的名称
+ * 如果应用名称一样则被视为集群的节点
+ */
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
