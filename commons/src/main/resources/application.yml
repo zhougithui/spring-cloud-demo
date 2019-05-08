@@ -15,4 +15,4 @@ eureka:
           enabled: true
   instance:
       statusPageUrlPath: ${server.servlet.context-path}/hello
-      healthCheckUrlPath: ${server.servlet.context-path}/hello1
+      healthCheckUrlPath: ${server.servlet.context-path}/hello
