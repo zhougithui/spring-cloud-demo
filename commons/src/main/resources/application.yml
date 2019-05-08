@@ -3,6 +3,9 @@ server:
   servlet:
     context-path: /commons
 
+spring:
+    application:
+        name: service-helloworld
 
 eureka:
   client:
@@ -11,5 +14,5 @@ eureka:
     healthcheck:
           enabled: true
   instance:
-      statusPageUrlPath: ${server.servletPath}/info
-      healthCheckUrlPath: ${server.servletPath}/health
+      statusPageUrlPath: ${server.servlet.context-path}/hello
+      healthCheckUrlPath: ${server.servlet.context-path}/hello1
