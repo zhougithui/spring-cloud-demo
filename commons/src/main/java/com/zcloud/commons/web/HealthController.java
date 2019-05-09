@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HealthController {
 
-    @RequestMapping("/hello")
-    public String hello(String name){
-        return "hello " + name;
+    @RequestMapping("/health")
+    public String beat(){
+        return "bom";
     }
 }

@@ -5,6 +5,7 @@
         <module>commons</module>
         <module>reactor-demo</module>
         <module>eureka-server</module>
+        <module>client</module>
     </modules>
     <groupId>com.zcloud</groupId>
     <version>1.0.0-SNAPSHOT</version>
