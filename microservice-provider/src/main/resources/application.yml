@@ -22,3 +22,18 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.hibernate.type.descriptor.sql.BasicExtractor: trace
 
+
+
+###actuator###
+info:
+  app:
+    name: ${server.servlet.context-path}
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      taget: @java.version@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
