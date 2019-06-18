@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /ms-server
+    context-path: /ms-provider
 spring:
   jpa:
     generate-ddl: false
