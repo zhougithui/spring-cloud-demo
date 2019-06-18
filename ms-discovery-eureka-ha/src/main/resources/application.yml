@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: ms-discovery-eureka-ha
+
+---
+spring:
+  profiles: ha-ds1
+server:
+   port: 8761
+
+eureka:
+   instance:
+       hostname: ha-ds1
+   client:
+       serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:8762/eureka/
+
+---
+spring:
+  profiles: ha-ds2
+server:
+   port: 8762
+
+eureka:
+   instance:
+       hostname: ha-ds2
+   client:
+       serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:8761/eureka/
