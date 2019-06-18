@@ -1,26 +1,8 @@
 server:
-  port: 8080
+  port: 8081
   servlet:
-    context-path: /ms-provider
-spring:
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-  datasource:
-    platform: h2
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password: 123456
-    schema: classpath:db/schema.sql
-    data: classpath:db/data.sql
-  application:
-    name: ms-provider
-  cloud:
-    refresh:
-      extra-refreshable: none
-      refreshable: none
+    context-path: /ms-consumer
+
 logging:
   level:
     root: info
@@ -41,6 +23,7 @@ management:
     web:
       exposure:
         include: ["*"]
+
 eureka:
   client:
     service-url:
@@ -49,6 +32,6 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true
-    metadata-map:
-      my-metadata: 自定义元数据
-    ip-address: 127.0.0.1
+spring:
+  application:
+    name: ms-consumer
