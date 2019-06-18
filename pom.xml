@@ -2,10 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <artifactId>spring-cloud-demo</artifactId>
     <modules>
-        <module>commons</module>
         <module>reactor-demo</module>
         <module>eureka-server</module>
-        <module>client</module>
         <module>microservice-provider</module>
         <module>microservice-provider-with-auth</module>
         <module>microservice-consumer</module>
