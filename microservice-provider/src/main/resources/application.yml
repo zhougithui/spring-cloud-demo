@@ -1,5 +1,4 @@
 server:
-  port: 8080
   servlet:
     context-path: /ms-provider
 spring:
@@ -41,6 +40,10 @@ management:
     web:
       exposure:
         include: ["*"]
+
+---
+server:
+  port: 8080
 eureka:
   client:
     service-url:
@@ -52,3 +55,22 @@ eureka:
     metadata-map:
       my-metadata: 自定义元数据
     ip-address: 127.0.0.1
+spring:
+  profiles: provider8080
+
+---
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: 自定义元数据
+    ip-address: localhost
+server:
+  port: 8088
+spring:
+  profiles: provider8088
