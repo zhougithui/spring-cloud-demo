@@ -9,6 +9,7 @@
         <module>microservice-provider</module>
         <module>microservice-consumer</module>
         <module>microservice-consumer-ribbon</module>
+        <module>microservice-consumer-without-eureka</module>
         <module>ms-discovery-eureka-ha</module>
     </modules>
     <groupId>com.zcloud</groupId>
