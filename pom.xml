@@ -7,10 +7,12 @@
         <module>eureka-server</module>
         <module>client</module>
         <module>microservice-provider</module>
+        <module>microservice-provider-with-auth</module>
         <module>microservice-consumer</module>
         <module>microservice-consumer-ribbon</module>
         <module>microservice-consumer-without-eureka</module>
         <module>microservice-consumer-feign</module>
+        <module>microservice-consumer-feign-manual</module>
         <module>ms-discovery-eureka-ha</module>
     </modules>
     <groupId>com.zcloud</groupId>
