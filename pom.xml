@@ -4,6 +4,7 @@
     <modules>
         <module>reactor-demo</module>
         <module>eureka-server</module>
+        <module>microservice-gateway-zuul</module>
         <module>microservice-provider</module>
         <module>microservice-hystrix-turbine</module>
         <module>microservice-hystrix-dashboard</module>
