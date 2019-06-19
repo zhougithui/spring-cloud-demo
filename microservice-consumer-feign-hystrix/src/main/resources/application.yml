@@ -32,6 +32,8 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true
+    metadata-map:
+      cluster: feign-hystrix
 spring:
   application:
     name: ms-feign-hystrix-consumer

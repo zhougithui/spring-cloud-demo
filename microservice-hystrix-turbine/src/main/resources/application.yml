@@ -36,5 +36,10 @@ eureka:
     ip-address: 127.0.0.1
 turbine:
   app-config: ms-ribbon-hystrix-consumer, ms-feign-hystrix-consumer
-  cluster-name-expression: "'default'"
-  instanceUrlSuffix: actuator/hystrix.stream
+  aggregator:
+    clusterConfig: ribbon-hystrix,feign-hystrix
+  cluster-name-expression: metadata['cluster']
+  combine-host-port: true
+  instanceUrlSuffix:
+    ribbon-hystrix: ms-ribbon-hystrix-consumer/actuator/hystrix.stream
+    feign-hystrix: ms-feign-hystrix-consumer/actuator/hystrix.stream

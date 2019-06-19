@@ -32,6 +32,8 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true
+    metadata-map:
+      cluster: ribbon-hystrix
 spring:
   application:
     name: ms-ribbon-hystrix-consumer
