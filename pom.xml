@@ -5,6 +5,8 @@
         <module>reactor-demo</module>
         <module>eureka-server</module>
         <module>microservice-provider</module>
+        <module>microservice-hystrix-turbine</module>
+        <module>microservice-hystrix-dashboard</module>
         <module>microservice-provider-with-auth</module>
         <module>microservice-consumer</module>
         <module>microservice-consumer-ribbon</module>

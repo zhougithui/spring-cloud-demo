@@ -1,7 +1,7 @@
 server:
-  port: 8010
   servlet:
-    context-path: /ms-feign-hystrix-consumer
+    context-path: /ms-hystrix
+  port: 8030
 
 logging:
   level:
@@ -34,7 +34,7 @@ eureka:
     prefer-ip-address: true
 spring:
   application:
-    name: ms-feign-hystrix-consumer
+    name: ms-hystrix
 feign:
   hystrix:
     enabled: true

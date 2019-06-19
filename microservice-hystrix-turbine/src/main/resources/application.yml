@@ -1,8 +1,7 @@
 server:
-  port: 8010
   servlet:
-    context-path: /ms-feign-hystrix-consumer
-
+    context-path: /ms-turbine
+  port: 8031
 logging:
   level:
     root: info
@@ -32,9 +31,10 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true
-spring:
-  application:
-    name: ms-feign-hystrix-consumer
-feign:
-  hystrix:
-    enabled: true
+    metadata-map:
+      my-metadata: 自定义元数据
+    ip-address: 127.0.0.1
+turbine:
+  app-config: ms-ribbon-hystrix-consumer, ms-feign-hystrix-consumer
+  cluster-name-expression: "'default'"
+  instanceUrlSuffix: actuator/hystrix.stream
