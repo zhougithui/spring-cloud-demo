@@ -11,6 +11,7 @@
         <module>microservice-consumer-ribbon-hystrix</module>
         <module>microservice-consumer-without-eureka</module>
         <module>microservice-consumer-feign</module>
+        <module>microservice-consumer-feign-hystrix</module>
         <module>microservice-consumer-feign-manual</module>
         <module>ms-discovery-eureka-ha</module>
     </modules>
