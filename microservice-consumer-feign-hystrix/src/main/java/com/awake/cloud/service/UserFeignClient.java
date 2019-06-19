@@ -5,7 +5,9 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "ms-provider", fallback = UserFeignClientFallback.class)
+@FeignClient(name = "ms-provider"
+        //, fallback = UserFeignClientFallback.class
+        , fallbackFactory = UserFeignClientFallbackFactory.class)
 public interface UserFeignClient {
 
     @RequestMapping("/ms-provider/{id}")
