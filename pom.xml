@@ -6,6 +6,7 @@
         <module>eureka-server</module>
         <module>microservice-gateway-zuul</module>
         <module>microservice-config-server</module>
+        <module>microservice-config-client</module>
         <module>microservice-provider</module>
         <module>microservice-hystrix-turbine</module>
         <module>microservice-hystrix-dashboard</module>
