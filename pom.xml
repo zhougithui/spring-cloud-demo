@@ -8,6 +8,7 @@
         <module>microservice-provider-with-auth</module>
         <module>microservice-consumer</module>
         <module>microservice-consumer-ribbon</module>
+        <module>microservice-consumer-ribbon-hystrix</module>
         <module>microservice-consumer-without-eureka</module>
         <module>microservice-consumer-feign</module>
         <module>microservice-consumer-feign-manual</module>
