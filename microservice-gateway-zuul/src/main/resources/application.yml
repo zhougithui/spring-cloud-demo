@@ -35,3 +35,11 @@ eureka:
 spring:
   application:
     name: ms-gateway-zuul
+zuul:
+  routes:
+    api-user-feign:
+      path: /api-user-feign/**
+      service-id: ms-feign-hystrix-consumer
+    api-user-ribbon:
+      path: /api-user-ribbon/**
+      service-id: ms-ribbon-hystrix-consumer
