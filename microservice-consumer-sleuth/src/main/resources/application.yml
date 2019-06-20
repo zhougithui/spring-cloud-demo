@@ -1,0 +1,38 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /ms-sleuth-consumer
+
+logging:
+  level:
+    root: info
+    org.springframework.web.servlet.DispatchServlet: debug
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+
+###actuator###
+info:
+  app:
+    name: ${server.servlet.context-path}
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      taget: @java.version@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: ms-sleuth-consumer
