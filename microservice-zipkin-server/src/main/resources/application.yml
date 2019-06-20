@@ -1,5 +1,7 @@
 server:
   port: 8090
+  servlet:
+    context-path: /ms-zipkin-server
 
 logging:
   level:
@@ -37,6 +39,6 @@ eureka:
 spring:
   application:
     name: ms-zipkin-server
-#zipkin:
-#  ui:
-#    basepath: /ms-zipkin-server/zipkin
+zipkin:
+  ui:
+    basepath: /ms-zipkin-server/zipkin

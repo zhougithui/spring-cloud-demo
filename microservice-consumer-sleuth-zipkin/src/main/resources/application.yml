@@ -37,7 +37,7 @@ spring:
   application:
     name: ms-sleuth-consumer
   zipkin:
-    base-url: http://localhost:8090
+    base-url: http://localhost:8090/ms-zipkin-server
   sleuth:
     sampler:
       probability: 1.0
