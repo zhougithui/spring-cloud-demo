@@ -37,6 +37,6 @@ eureka:
 spring:
   application:
     name: ms-zipkin-server
-  zipkin:
-    service:
-      name:
+#zipkin:
+#  ui:
+#    basepath: /ms-zipkin-server/zipkin
