@@ -9,11 +9,14 @@
         <module>microservice-config-client</module>
         <module>microservice-provider</module>
         <module>microservice-provider-sleuth</module>
+        <module>microservice-provider-sleuth-zipkin</module>
         <module>microservice-hystrix-turbine</module>
         <module>microservice-hystrix-dashboard</module>
         <module>microservice-provider-with-auth</module>
         <module>microservice-consumer</module>
+        <module>microservice-zipkin-server</module>
         <module>microservice-consumer-sleuth</module>
+        <module>microservice-consumer-sleuth-zipkin</module>
         <module>microservice-consumer-ribbon</module>
         <module>microservice-consumer-ribbon-hystrix</module>
         <module>microservice-consumer-without-eureka</module>
