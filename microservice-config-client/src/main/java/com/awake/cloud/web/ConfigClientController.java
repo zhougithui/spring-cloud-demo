@@ -9,6 +9,8 @@ public class ConfigClientController {
 
     @Value("${username}")
     private String userName;
+    @Value("${username2}")
+    private String userName2;
 
     @GetMapping("/config")
     public String config(){

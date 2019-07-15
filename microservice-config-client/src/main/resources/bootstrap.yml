@@ -36,4 +36,4 @@ spring:
       uri: http://localhost:8050/ms-config-server
       profile: dev
       label: master
-      name: ms
+      name: ms, ms2
